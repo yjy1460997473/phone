@@ -48,7 +48,37 @@
 
 ### 项目开发
 
-	1. 配置路由
+	1. 插件安装
+
+	* npm install mongoose
+	* npm install body-parser
+	* npm install cookie-parser
+	* npm install multer
+
+	2. 数据库
+
+	* 启动mongodb
+	* 另开一个cmd
+	* 输入mongo
+	* 创建数据库phone
+	`use phone`
+	* 检查当前选择的数据库
+	`db `
+	* 创建集合login
+	`db.createCollection("login")`
+	* 插入数据
+	db.login.insert({
+	    "_id" : "15770878703",
+	    "name" : "李雷",
+	    "pass" : "asdfgh123",
+	    "_name" : "Mike",
+	    "is" : true
+	})
+	
+	 
+
+
+
 
 
 

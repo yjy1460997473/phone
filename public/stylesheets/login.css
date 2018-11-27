@@ -1,0 +1,53 @@
+@charset "UTF-8";
+body{
+	background:#eee;
+}
+form{
+	position: fixed;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 480px;
+	height: 240px;
+	background:#fff;
+	border-radius: 10px;
+}
+form div{
+	width: 300px;
+	height: 40px;
+	line-height: 40px;
+	margin: 30px 0 0 90px;
+	font-size: 20px;
+}
+form label{
+	float: left;
+	width: 60px;
+}
+form input{
+	float: left;
+	border:1px solid #ccc;
+	width: 180px;
+	height: 20px;
+	margin-top: 5px;
+	padding: 5px 10px;	
+}
+form input[type='submit']{
+	margin-left: 60px;
+	margin-top:0;
+	padding: 0;
+	height: 40px;
+	border-radius: 5px;
+	background:#f60;
+	color: #fff;
+	font-size: 28px;
+	font-weight: bold;
+}
+#register{
+	position: absolute;
+	cursor: pointer;
+	bottom: 10px;
+	right: 20px;
+}
+#register:hover{
+	color:#f60;
+}

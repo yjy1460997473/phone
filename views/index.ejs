@@ -1,11 +1,49 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/public.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<% include header %>
+<link rel="stylesheet" href="/stylesheets/index.css">
+<aside class="fl">
+	<a href="/index">用户管理</a>
+	<a href="/index2">品牌管理</a>
+	<a href="/index3">手机管理</a>
+</aside> 
+<div class="main fr">
+	<form class="search">
+        <input type="text">
+        <input type="button" value="搜索">
+    </form>
+	<table>
+		<thead>
+            <tr>
+              <th>用户名</th>
+              <th>年龄</th>
+              <th>性别</th>
+              <th>电话</th>
+              <th>地址</th>
+              <th>是否管理员</th>
+              <th>操作</th>
+            </tr>
+        </thead>
+        <tbody> 
+        	<% for(var i = 0; i < 5; i++){%>
+        	<tr>
+                <th><% 1 %></th>
+                <th><% 2 %></th>
+                <th><% 3 %></th>
+                <th><% 4 %></th>
+                <th><% 5 %></th>
+                <th><% 6 %></th>
+                <th>
+                    <a href="">删除</a>
+                </th>
+            </tr>
+            <%} %>
+        	
+        </tbody>	
+	</table>
+	<ul class="index">
+		<% for(var i = 0; i < 4; i++){%>
+		<li></li>
+		<%} %>
+	</ul>
+</div>
+<% include footer %>
+
